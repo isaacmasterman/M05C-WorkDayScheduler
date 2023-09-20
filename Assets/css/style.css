@@ -1,5 +1,6 @@
-head {
+header {
   text-align: center;
+  border-bottom: 5px solid #000; /
 }
 
 body {
