@@ -71,3 +71,10 @@ textarea {
   display: none;
   font-size: 16px;
 }
+
+@media (max-width: 400px) {
+  .hour {
+    font-size: 14px; /* Adjust this value as needed */
+    padding: 0
+  }
+}
