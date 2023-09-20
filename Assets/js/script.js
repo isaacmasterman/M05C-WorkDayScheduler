@@ -13,6 +13,19 @@ $(function () {
 
     // Save the event to local storage
     localStorage.setItem(blockHour, eventText);
+
+    // Check if the notification already exists
+    if (!$("#notification").length) {
+      // Create the notification element
+      let notification = $('<div id="notification">Appointment Added to local storage <i class="fas fa-check"></i></div>');
+  
+      // Prepend it to the container-fluid
+      $(".container-fluid").prepend(notification);
+    }
+
+    // Show the notification
+    $("#notification").slideDown(300).delay(3000).slideUp(300);
+
   });
 
   // Current hour
